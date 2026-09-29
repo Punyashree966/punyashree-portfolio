@@ -225,7 +225,68 @@ export const PROJECTS_DATA: ProjectItem[] = [
       'Clear on-site readability via high-contrast 16x2 LCD screen',
       'Over-the-air monitoring reducing manual farm inspection effort and water waste',
     ],
+    },
+
+  {
+    id: 'innovexa',
+    title: 'INNOVEXA',
+    tagline: 'Smart Healthcare & Emergency Alert System',
+    description:
+      'A technology-focused project designed around smart healthcare support and emergency alert functionality.',
+
+    category: 'HEALTHCARE • EMERGENCY • TECHNOLOGY',
+
+    image: '/src/assets/images/innovexa.jpg',
+
+    overview: [
+      'In critical healthcare scenarios, latency in alerting family members or emergency contacts can result in delayed assistance.',
+      'The goal was to conceptualize a rapid, dependable alert trigger for emergency situations.',
+      'Structured an alert transmission workflow providing automated messaging and status notifications to designated medical contacts upon distress trigger detection.',
+      'Co-developed system architecture logic, alert dispatch routines, and interface prototyping for seamless emergency response simulation.',
+    ],
+
+    components: [
+      {
+        name: 'Emergency Alert Trigger',
+        role: 'Distress trigger detection',
+        specs:
+          'Rapid, dependable alert trigger concept designed for critical healthcare scenarios.',
+      },
+      {
+        name: 'Alert Dispatch Workflow',
+        role: 'Emergency message transmission',
+        specs:
+          'Structured workflow providing automated messaging and status notifications to designated medical contacts.',
+      },
+      {
+        name: 'User & Contact Records',
+        role: 'Contact organization',
+        specs:
+          'Structured modular user and contact records for emergency communication.',
+      },
+      {
+        name: 'Interface Prototype',
+        role: 'Emergency response simulation',
+        specs:
+          'Interface prototyping for seamless emergency response simulation.',
+      },
+    ],
+
+    techStack: [
+      'HEALTHCARE',
+      'EMERGENCY',
+      'TECHNOLOGY',
+    ],
+
+    features: [
+      'Rapid and dependable emergency alert trigger',
+      'Automated messaging to designated medical contacts',
+      'Status notifications for emergency events',
+      'Fault-tolerant notification approach with fallback mechanisms',
+      'Modular user and contact record structure',
+    ],
   },
+];
 ];
 
 export const CERTIFICATIONS_DATA: CertificateItem[] = [
