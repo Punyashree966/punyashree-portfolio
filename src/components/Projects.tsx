@@ -290,44 +290,69 @@ export const Projects: React.FC<ProjectsProps> = ({ isDarkMode }) => {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-0 border-b border-slate-800/80">
 
               {/* Innovexa Visual */}
-              <div className="lg:col-span-6 relative aspect-video lg:aspect-auto min-h-[300px] overflow-hidden bg-slate-950">
-                <img
-                  src={innovexa.image}
-                  alt={innovexa.title}
-                  referrerPolicy="no-referrer"
-                  className="w-full h-full object-cover object-center transform transition-transform duration-700 hover:scale-105"
-                  onError={(e) => {
-                    e.currentTarget.style.display = 'none';
+<div className="lg:col-span-6 relative min-h-[320px] overflow-hidden bg-slate-950">
+  <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-cyan-950" />
 
-                    const fallback = e.currentTarget.nextElementSibling;
+  <div className="relative h-full min-h-[320px] flex flex-col justify-between p-8">
+    <div className="flex items-center justify-between gap-4">
+      <div className="inline-flex items-center gap-2 text-xs font-semibold tracking-wider text-cyan-300">
+        <Activity className="w-4 h-4" />
+        INNOVEXA :: EMERGENCY DISPATCH
+      </div>
 
-                    if (fallback) {
-                      (fallback as HTMLElement).style.display = 'flex';
-                    }
-                  }}
-                />
+      <div className="px-3 py-1 rounded-lg border border-rose-500/40 bg-rose-950/40 text-xs font-mono text-rose-300">
+        ALERT STATUS: STANDBY
+      </div>
+    </div>
 
-                {/* Fallback */}
-                <div
-                  style={{ display: 'none' }}
-                  className="w-full h-full flex-col items-center justify-center p-8 bg-gradient-to-br from-slate-950 to-cyan-950 text-center"
-                >
-                  <Activity className="w-14 h-14 text-cyan-400 mb-3" />
+    <div className="my-8">
+      <svg
+        viewBox="0 0 800 120"
+        className="w-full h-24"
+        preserveAspectRatio="none"
+      >
+        <polyline
+          points="0,60 100,60 125,60 145,20 165,100 185,60 300,60 330,60 350,25 375,95 395,60 520,60 550,60 575,15 600,105 625,60 720,60 760,60 800,60"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="4"
+          className="text-rose-500"
+        />
+      </svg>
+    </div>
 
-                  <span className="font-bold text-2xl text-white">
-                    INNOVEXA
-                  </span>
+    <div className="grid grid-cols-3 gap-3">
+      <div className="p-4 rounded-xl bg-slate-900/80 border border-cyan-500/20">
+        <div className="text-[10px] uppercase tracking-wider text-slate-400">
+          Heart Rate
+        </div>
+        <div className="text-lg font-bold text-rose-400 mt-1">
+          78 BPM
+        </div>
+      </div>
 
-                  <span className="text-xs text-cyan-300 mt-2">
-                    Smart Healthcare & Emergency Alert System
-                  </span>
-                </div>
+      <div className="p-4 rounded-xl bg-slate-900/80 border border-cyan-500/20">
+        <div className="text-[10px] uppercase tracking-wider text-slate-400">
+          SpO2
+        </div>
+        <div className="text-lg font-bold text-cyan-400 mt-1">
+          98%
+        </div>
+      </div>
 
-                {/* Category */}
-                <div className="absolute top-4 left-4 bg-slate-950/80 backdrop-blur-md border border-cyan-500/30 px-3 py-1 rounded-lg text-xs font-semibold text-cyan-300">
-                  {innovexa.category}
-                </div>
-              </div>
+      <div className="p-4 rounded-xl bg-slate-900/80 border border-cyan-500/20">
+        <div className="text-[10px] uppercase tracking-wider text-slate-400">
+          Alert Protocol
+        </div>
+        <div className="text-lg font-bold text-emerald-400 mt-1">
+          READY
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+            
+             
 
               {/* Innovexa Info */}
               <div className="lg:col-span-6 p-6 sm:p-10 flex flex-col justify-between">
