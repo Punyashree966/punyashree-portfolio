@@ -12,8 +12,8 @@ export const PERSONAL_INFO = {
   institution: 'REVA University, Bengaluru',
   location: 'Bengaluru, Karnataka, India',
   email: 'sripunyaa966@gmail.com',
-  defaultGithub: 'punyashreem',
-  defaultLinkedin: 'punyashree-m',
+  defaultGithub: 'Punyashree966',
+  defaultLinkedin: 'punyashree-m-831030417',
   about: `Punyashree M is a dedicated B.Tech student in Artificial Intelligence and Data Science at REVA University, Bengaluru. With a growing foundation in programming, artificial intelligence, machine learning, and data analysis, she is driven by a passion for developing innovative technological solutions that solve meaningful real-world challenges. Her long-term goal is to excel as a forward-thinking AI/ML professional capable of turning complex datasets into intelligent, automated systems.`,
   coreFocus: [
     {
