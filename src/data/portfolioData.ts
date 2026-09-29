@@ -308,7 +308,7 @@ export const PROJECTS_DATA: ProjectItem[] = [
     description:
       'A technology-focused project designed around smart healthcare support and emergency alert functionality.',
     category: 'HEALTHCARE • EMERGENCY • TECHNOLOGY',
-    image: '/src/assets/images/innovexa.jpg',
+    image: '',
     overview: [
       'In critical healthcare scenarios, latency in alerting family members or emergency contacts can result in delayed assistance.',
       'The goal was to conceptualize a rapid, dependable alert trigger for emergency situations.',
